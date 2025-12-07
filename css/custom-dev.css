@@ -116,7 +116,7 @@ header{width: 100%;position: relative;background-color:#FFF8F5;}
 .header-menu ul li a{color:#240F03;opacity: 0.40;}
 .header-menu ul li:hover a{opacity: 1;}
 .header-right button{margin: 0 0 0 20px;padding: 0;border: 0;background-color: transparent;}
-footer{background-color: #E65100;}
+footer{background-color: #E65100;overflow: hidden;}
 .footer-top{padding: 80px 0;}
 .footer-top-left{max-width: 590px;}
 .footer-top-left .logo a img{height: 80px;width: auto;}
@@ -130,7 +130,19 @@ footer{background-color: #E65100;}
 .message-form input::-moz-placeholder {color:  rgba(255, 255, 255,0.20);}
 .message-form input:-ms-input-placeholder{color:  rgba(255, 255, 255,0.20);}
 .message-form input:-moz-placeholder {color:  rgba(255, 255, 255,0.20);}
-.footer-bottom{padding: 80px 0;border-top:1px solid rgba(255, 255, 255,0.30)}
+.footer-bottom{border-top:1px solid rgba(255, 255, 255,0.30)}
+.footer-bottom-top{padding: 80px 0;    position: relative;}
+.footer-bottom-top::before{
+  content: "";
+  background-image: url('../images/rangoli-white.png');background-repeat: no-repeat;background-size: contain;background-position: center center;width: 780px;
+    aspect-ratio: 100 / 100;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9;
+    top: 0;
+}
 .footer-menu h3{font-size: 24px;color: var(--white);}
 .footer-menu .list,
 .footer-menu ul{margin-top: 50px;}
