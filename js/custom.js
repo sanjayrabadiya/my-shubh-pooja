@@ -1,4 +1,10 @@
 $(document).ready(function(){	
+    $('.open-menu').click(function(event) {
+		$('body').toggleClass('show-menu');
+	});	
+	$('.close-menu,.header-menu ul li a').click(function(event) {
+		$('body').removeClass('show-menu');
+	});	
 	$('.scroll-to-next a[href^="#"]').on('click', function(e) {
         e.preventDefault();
 
@@ -29,14 +35,48 @@ $(document).ready(function(){
         infinite: false,
         slidesToShow: 3.3,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     $('.testimonials-slider').slick({
         infinite: false,
         slidesToShow: 2.4,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 		
 });
