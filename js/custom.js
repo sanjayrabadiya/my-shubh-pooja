@@ -26,22 +26,17 @@ $(document).ready(function(){
     });
 
 	$('.product-list').slick({
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false
-  });
-  
-  const slider = $(".multiple-items");
+        infinite: false,
+        slidesToShow: 3.3,
+        slidesToScroll: 1,
+        arrows: false
+    });
 
-  slider.on('wheel', (function(e) {
-    e.preventDefault();
-
-    if (e.originalEvent.deltaY < 0) {
-      $(this).slick('slickNext');
-    } else {
-      $(this).slick('slickPrev');
-    }
-  }));
+    $('.testimonials-slider').slick({
+        infinite: false,
+        slidesToShow: 2.4,
+        slidesToScroll: 1,
+        arrows: false
+    });
 		
 });
