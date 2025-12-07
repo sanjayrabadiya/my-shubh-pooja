@@ -75,6 +75,7 @@ ul, li, ol {margin: 0;padding: 0;list-style: none;color: var(--black); }
 .wrapper {width: 100%;position: relative; }
 .img-fluid {max-width: 100%;height: auto; }
 p {margin: 0; padding: 0;color: var(--text-color);font-size: 18px;font-style: normal;font-weight: 400;line-height: noraml;font-family: var(--text-font);}
+p + p{margin-top: 20px;}
 b {font-weight: 700; }
 input, select, button, textarea{outline: none;box-shadow: none;}
 input::-webkit-input-placeholder,
@@ -88,7 +89,7 @@ textarea:-moz-placeholder {color:  var(--black);}
 
 .gary-bg{background-color: var(--gray-bg);}
 
-.btn-custom{background: #2E7D32;color: var(--white);font-size: 16px;padding: 16px 26px;border:1px solid #2E7D32;box-shadow: none;outline: none;transition: 0.3s;font-family: var(--text-font);letter-spacing: 0.040em;border-radius: 8px;font-weight: 700;line-height: auto;display: flex;white-space: nowrap;}
+.btn-custom{background: #2E7D32;color: var(--white);font-size: 16px;padding: 16px 26px;border:1px solid #2E7D32;box-shadow: none;outline: none;transition: 0.3s;font-family: var(--text-font);border-radius: 8px;font-weight: 700;line-height: normal;display: flex;white-space: nowrap;max-width: max-content;}
 .btn-custom:hover{background-color:var(--orange);color: var(--white);}
 
 
@@ -107,7 +108,7 @@ textarea:-moz-placeholder {color:  var(--black);}
 .sec-heading h4{color: var(--heading-color);font-family: var(--heading-font);font-size: 65.478px;font-style: normal;font-weight: 400;line-height: 1.25;letter-spacing: 0.982px;text-transform: uppercase;margin: 0 auto;}
 
 /********* header *************/
-header{width: 100%;position: relative;background-color:#FFF8F5;}
+header{width: 100%;position: relative;background-color:#FFF8F5;border-bottom: 1px solid rgba(36, 15, 3, 0.4);}
 .main-header{padding: 20px 0;}
 .annoucebar{background-color: var(--orange);padding: 6px;text-align: center;color: var(--white);}
 .main-header .logo a img{height: 56px;width: auto;}
@@ -132,17 +133,7 @@ footer{background-color: #E65100;overflow: hidden;}
 .message-form input:-moz-placeholder {color:  rgba(255, 255, 255,0.20);}
 .footer-bottom{border-top:1px solid rgba(255, 255, 255,0.30)}
 .footer-bottom-top{padding: 80px 0;    position: relative;}
-.footer-bottom-top::before{
-  content: "";
-  background-image: url('../images/rangoli-white.png');background-repeat: no-repeat;background-size: contain;background-position: center center;width: 780px;
-    aspect-ratio: 100 / 100;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 9;
-    top: 0;
-}
+.footer-bottom-top::before{content: "";background-image: url('../images/rangoli-white.png');background-repeat: no-repeat;background-size: contain;background-position: center center;width: 780px; aspect-ratio: 100 / 100;position: absolute;left: 0;right: 0;margin: auto;z-index: 9;top: 0;}
 .footer-menu h3{font-size: 24px;color: var(--white);}
 .footer-menu .list,
 .footer-menu ul{margin-top: 50px;}
@@ -153,6 +144,28 @@ footer{background-color: #E65100;overflow: hidden;}
 .copyright{padding: 24px 0;}
 .social-media{display: flex;align-items: center;}
 .copyright p{color: var(--white);}
+
+
+.banner{position: relative;background-color:#FFF8F5;padding: 80px 0 0 0;}
+.banner::before{content: "";background-image: url('../images/rangoli.png');background-repeat: no-repeat;background-size: contain;background-position: center center;width: 780px; aspect-ratio: 100 / 100;position: absolute;left: 0;right: 0;margin: auto;z-index: 9;top: 0;}
+.banner-left{max-width: 790px;}
+.banner-left h1{font-size: 90px;color: #5F290C;line-height: 1;}
+.banner-left p{max-width: 375px;margin-top: 20px;}
+.banner-left-image{margin-top: 90px;margin-left: -80px;}
+.banner-left-image img{border-radius: 40px;width: 268px;aspect-ratio: 100/116;}
+.banner-right{max-width: 405px;}
+.banner-right p{text-align: right;}
+.banner-right-image{margin-top: 82px;}
+.banner-right-image img{border-radius: 40px;width: 492px;aspect-ratio: 100/115.4;}
+.scroll-to-next {text-align: center;bottom: 20px;width: 100%;position: absolute;left: 0;}
+.scroll-to-next a{color: #5F290C;text-transform: uppercase;}
+.about-us{padding: 130px 0 280px 0;}
+.about-left {max-width: 490px;}
+.about-left h5{font-family: var(--text-font);font-style: normal;font-weight: 400;font-size: 18px;line-height: 1.166;color: #240F03;text-transform: uppercase;}
+.about-left h2{font-size: 50px;line-height: 1.1;margin: 10px 0;}
+.about-left .buttons{margin-top: 40px;}
+.about-right{max-width: 652px;}
+.big-text{position: absolute;left: 0px;right: 0;bottom: 0;color: #E65100;opacity: 0.1;text-transform: uppercase;font-size: 260px;font-weight: 700;line-height: 0.7;text-align: center;max-width: 1440px;margin: 0 auto;}
 
 @media only screen and (min-width: 992px) and (max-width:1199px) {
   
