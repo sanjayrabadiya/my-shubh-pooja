@@ -220,6 +220,17 @@ footer{background-color: #E65100;overflow: hidden;}
 .testimonials-slider .box .name h4{font-style: normal;font-weight: 500;font-size: 20px;line-height: 1.2;text-transform: capitalize;color: #5F290C;}
 .testimonials-slider .box .name p{margin-top: 6px;}
 
+@media only screen and (min-width: 1600px) {
+  .custom-container {max-width: 1580px;}
+}
+@media only screen and (min-width: 1500px) {
+  body{font-size: 24px;}
+  .header-menu ul li{font-size: 24px;}
+  .custom-container {max-width: 1400px;}
+  p{font-size: 24px;}
+  .btn-custom {font-size: 24px;}
+  .sec-heading h5 {font-size: 24px;}
+}
 
 @media only screen and (min-width: 992px) and (max-width:1199px) {
   
