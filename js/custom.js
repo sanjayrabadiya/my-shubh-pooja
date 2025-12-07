@@ -24,5 +24,24 @@ $(document).ready(function(){
     $("#topBtn").click(function () {
         $("html, body").animate({ scrollTop: 0 }, 600);
     });
+
+	$('.product-list').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false
+  });
+  
+  const slider = $(".multiple-items");
+
+  slider.on('wheel', (function(e) {
+    e.preventDefault();
+
+    if (e.originalEvent.deltaY < 0) {
+      $(this).slick('slickNext');
+    } else {
+      $(this).slick('slickPrev');
+    }
+  }));
 		
 });

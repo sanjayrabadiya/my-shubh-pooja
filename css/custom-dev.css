@@ -92,6 +92,7 @@ textarea:-moz-placeholder {color:  var(--black);}
 .btn-custom{background: #2E7D32;color: var(--white);font-size: 16px;padding: 16px 26px;border:1px solid #2E7D32;box-shadow: none;outline: none;transition: 0.3s;font-family: var(--text-font);border-radius: 8px;font-weight: 700;line-height: normal;display: flex;white-space: nowrap;max-width: max-content;}
 .btn-custom:hover{background-color:var(--orange);color: var(--white);}
 
+.btn-custom.orange{background: #E65100;border:1px solid #E65100;}
 
 
 .slick-arrow {position: absolute;top: 50%;transform: translateY(-50%);z-index: 1;cursor: pointer;background-color: var(--orange);border-radius: 100%;width: 36px;aspect-ratio: 100/100;display: flex;align-items: center;justify-content: center;}
@@ -99,13 +100,10 @@ textarea:-moz-placeholder {color:  var(--black);}
 .slick-next{right: 0;}
 .slick-prev{left: 0;}
 
-.sec-heading h2{color: #000;font-family: var(--primary-font);font-size: 25.298px;font-style: normal;font-weight: 400;line-height: 1.29;letter-spacing: 5.186px;display: inline-block;position: relative;text-transform: uppercase;}
-.sec-heading h2::before,
-.sec-heading h2::after{content: ""; background: var(--orange);width: 67px; height: 1px;position: absolute;top:50%;transform: translateY(-50%);}
-.sec-heading h2::before{right: 100%;margin-right: 15px;}
-.sec-heading h2::after{left: 100%;margin-left: 15px;}
-.sec-heading p{color: var(--black);font-family: var(--primary-font);font-size: 25.298px;font-style: normal;font-weight: 300;line-height: 1.41;letter-spacing: 1.012px;margin: 0 auto;margin-top: 25px;}
-.sec-heading h4{color: var(--heading-color);font-family: var(--heading-font);font-size: 65.478px;font-style: normal;font-weight: 400;line-height: 1.25;letter-spacing: 0.982px;text-transform: uppercase;margin: 0 auto;}
+.sec-heading h5{font-family: var(--text-font);font-style: normal;font-weight: 400;font-size: 18px;line-height: 1.166;color: #240F03;text-transform: uppercase;}
+.sec-heading h2{font-size: 50px;line-height: 1.1;margin: 10px 0;color:#5F290C ;}
+
+
 
 /********* header *************/
 header{width: 100%;position: relative;background-color:#FFF8F5;border-bottom: 1px solid rgba(36, 15, 3, 0.4);}
@@ -146,6 +144,8 @@ footer{background-color: #E65100;overflow: hidden;}
 .copyright p{color: var(--white);}
 
 
+
+
 .banner{position: relative;background-color:#FFF8F5;padding: 80px 0 0 0;}
 .banner::before{content: "";background-image: url('../images/rangoli.png');background-repeat: no-repeat;background-size: contain;background-position: center center;width: 780px; aspect-ratio: 100 / 100;position: absolute;left: 0;right: 0;margin: auto;z-index: 9;top: 0;}
 .banner-left{max-width: 790px;}
@@ -159,13 +159,36 @@ footer{background-color: #E65100;overflow: hidden;}
 .banner-right-image img{border-radius: 40px;width: 492px;aspect-ratio: 100/115.4;}
 .scroll-to-next {text-align: center;bottom: 20px;width: 100%;position: absolute;left: 0;}
 .scroll-to-next a{color: #5F290C;text-transform: uppercase;}
-.about-us{padding: 130px 0 280px 0;}
-.about-left {max-width: 490px;}
-.about-left h5{font-family: var(--text-font);font-style: normal;font-weight: 400;font-size: 18px;line-height: 1.166;color: #240F03;text-transform: uppercase;}
-.about-left h2{font-size: 50px;line-height: 1.1;margin: 10px 0;}
+.about-us{padding: 130px 0 280px 0;background-color: var(--white);}
+.about-left {max-width: 380px;}
 .about-left .buttons{margin-top: 40px;}
 .about-right{max-width: 652px;}
 .big-text{position: absolute;left: 0px;right: 0;bottom: 0;color: #E65100;opacity: 0.1;text-transform: uppercase;font-size: 260px;font-weight: 700;line-height: 0.7;text-align: center;max-width: 1440px;margin: 0 auto;}
+
+.products-left {max-width: 513px;}
+.home-products{background-color: #FFF8F5;padding: 130px 0;}
+.product-list{margin: 60px 0;}
+.product-list .slick-list{margin-left: -10px;margin-right: -10px;overflow: visible;}
+.product-list .item{padding: 0 10px;}
+.product-list .box img{border-radius: 20px;width: 100%;aspect-ratio: 100 / 116;object-fit: cover;object-position: center;}
+.product-list .content{margin-top: 20px;}
+.product-list .content h3{font-size: 26px;line-height: normal;font-weight: normal;}
+.product-list .content .cart-button{margin-top: 20px;}
+.product-list .content .btn-add-to-cart{color: #E65100;padding: 4px 0;border-bottom: 1px solid #E65100;margin-top: 20px;}
+.product-list .produt-like{background-color: transparent;border: 0;padding: 0;}
+.why-choose{padding: 130px 0;}
+.why-choose .sec-heading{max-width: 513px;margin: 0 auto;}
+.why-choose-list {margin-top: 60px;}
+.why-choose-list .item {counter-increment: count;display: flex;align-items: center;padding: 50px 0 50px 110px;border-bottom: 1px solid rgba(36, 15, 3, 0.2);position: relative;}
+.why-choose-list .item h3{font-weight: 500;font-size: 24px;line-height: 1.20;text-transform: capitalize;color: #E65100;max-width: 260px;}
+.why-choose-list .item p{max-width: 418px;margin-left: 40px;}
+.why-choose-list .item .arrows{margin-left: auto;}
+.why-choose-list .item:first-child{border-top: 1px solid rgba(36, 15, 3, 0.2);}
+.why-choose-list .item:before {content: counter(count);font-family: var(--heading-font);font-style: normal;font-weight: 500;font-size: 30px;line-height: 1.87;text-transform: capitalize;color: #2E7D32;position: absolute;left: 0;top:50%;transform: translateY(-50%);}
+.why-choose-list .item:nth-child(-n+9):before {content: '0'counter(count)'.';}
+.why-choose-image{position: absolute;top: -33px;right: 157px;transform: rotate(-8.44deg);}
+.why-choose-image img{border-radius: 20px;width: 192px;aspect-ratio: 100/115;object-fit: cover;object-position: center;}
+.why-choose-list-sec{position: relative;}
 
 @media only screen and (min-width: 992px) and (max-width:1199px) {
   
